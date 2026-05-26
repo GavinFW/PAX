@@ -1,7 +1,8 @@
 # The Versatile PAX Calculator
 ### A Fast, Offline-Ready, Historical, Professional Autocross Tool
 
-#### https://gavinfw.github.io/PAX/
+Calculator: https://gavinfw.github.io/PAX/  
+https://gavinfw.github.io/PAX/example.html
 
 PAX, or the Professional Autocross Index, is used to compare the performance of autocross 
 racecars which may be built to very different class standards. This calculator is for 
