@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAX Calculator — Banner Embed Example</title>
+<style>
+html, body {
+  margin: 0; padding: 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  background: #fff;
+  padding-bottom: 54px; /* room for the fixed banner */
+}
+.rowlow  { background: #fff; }
+.rowhigh { background: #f0f0f0; }
+table { margin: .6em 0; border-collapse: collapse; }
+table.live { font-size: 1.8vw; width: 100%; }
+th {
+  color: #fff; font-family: Arial; font-weight: bold;
+  background: #000099; padding: 4px 6px; white-space: nowrap;
+}
+td { vertical-align: middle; padding: 3px 6px; }
+.bestt { font-weight: bold; }
+a { color: blue; } a:visited { color: #333; }
+a.btn {
+  background: #6495ed; color: #fff; padding: 3px 9px;
+  border-radius: 3px; text-decoration: none;
+  font-weight: bold; border: 1px solid navy; font-size: 90%;
+}
+a.btn:hover { color: yellow; }
+.bk a { color: navy; font-weight: bold; }
+
+/* ── PAX banner ──────────────────────────────── */
+#pax-banner {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 50px;
+  background: #e0e0e0;
+  border-top: 2px solid #aaa;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: stretch;
+}
+#pax-banner iframe {
+  flex: 1 1 0;
+  border: none;
+  display: block;
+}
+#pax-popout {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border-left: 1px solid #bbb;
+}
+#pax-popout button {
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px 6px;
+  color: #444;
+  line-height: 1;
+}
+#pax-popout button:hover { background: #f0f4ff; border-color: #666; }
+</style>
+</head>
+<body>
+
+<table class="live" cellpadding="3" cellspacing="0" align="center"><tbody>
+<tr class="rowlow">
+  <th align="center">
+    <span style="float:right;font-size:85%;font-weight:normal;color:silver;font-style:italic">Live Timing System</span>
+    Live Timing
+  </th>
+</tr>
+<tr class="rowlow"><th align="center">Granite State Autocross — Event #4 — Sat 05-24-2026</th></tr>
+<tr class="rowlow">
+  <th align="center">
+    Generated: Sat 05-24-2026 14:12:08 &nbsp; <i>*** Unofficial ***</i>
+    &nbsp; <a href="#" class="btn" onclick="location.reload()">Refresh</a>
+  </th>
+</tr>
+</tbody></table>
+
+<a name="top"></a>
+<table class="live bk" border="0" cellspacing="5" width="80%" cellpadding="3" align="center"><tbody>
+<tr>
+  <td><a href="#cs">CS — Street</a></td>
+  <td><a href="#ds">DS — Street</a></td>
+  <td><a href="#hs">HS — Street</a></td>
+  <td><a href="#ss">SS — Street</a></td>
+  <td><a href="#str">STR — Street Touring</a></td>
+  <td><a href="#esp">ESP — Street Prepared</a></td>
+</tr>
+</tbody></table>
+
+<!-- Last runs -->
+<table class="live" cellpadding="3" cellspacing="0" align="center"><tbody>
+<tr class="rowlow"><th colspan="4" align="center">&#9679; Last 20 Runs &#9679;</th></tr>
+<tr class="rowlow">
+  <th>Run&nbsp;#</th><th>Class&nbsp;/&nbsp;#</th><th>Driver</th><th>Time</th>
+</tr>
+<tr class="rowlow"><td align="center">6</td><td><b>CS #47</b></td><td>Morgan Ellis</td><td align="right"><span class="bestt">52.841</span></td></tr>
+<tr class="rowhigh"><td align="center">6</td><td><b>DS #12</b></td><td>Jordan Park</td><td align="right"><span class="bestt">54.107+1</span></td></tr>
+<tr class="rowlow"><td align="center">6</td><td><b>STR #88</b></td><td>Casey Drummond</td><td align="right"><span class="bestt">51.334</span></td></tr>
+<tr class="rowhigh"><td align="center">6</td><td><b>HS #31</b></td><td>Taylor Voss</td><td align="right"><span class="bestt">55.620</span></td></tr>
+<tr class="rowlow"><td align="center">6</td><td><b>ESP #7</b></td><td>Riley Holt</td><td align="right"><span class="bestt">49.882</span></td></tr>
+<tr class="rowhigh"><td align="center">6</td><td><b>SS #99</b></td><td>Dana Prescott</td><td align="right"><span class="bestt">50.114</span></td></tr>
+<tr class="rowlow"><td align="center">6</td><td><b>CS #22</b></td><td>Quinn Archer</td><td align="right"><span class="bestt">53.290+1</span></td></tr>
+<tr class="rowhigh"><td align="center">6</td><td><b>DS #55</b></td><td>Cameron Lowe</td><td align="right"><span class="bestt">54.811</span></td></tr>
+</tbody></table>
+
+<!-- CS -->
+<a name="cs"></a>
+<table class="live" cellpadding="3" cellspacing="0" align="center"><tbody>
+<tr class="rowlow"><th colspan="7" align="center">CS — Street (PAX 0.814)</th></tr>
+<tr class="rowlow">
+  <th>Pos</th><th>#</th><th>Driver</th><th>Car</th>
+  <th>Best</th><th>Diff</th><th>PAX</th>
+</tr>
+<tr class="rowlow"><td>1</td><td>47</td><td>Morgan Ellis</td><td>2022 Honda Civic Si</td><td align="right"><span class="bestt">52.841</span></td><td align="right">—</td><td align="right">43.012</td></tr>
+<tr class="rowhigh"><td>2</td><td>22</td><td>Quinn Archer</td><td>2019 Subaru BRZ</td><td align="right">53.290</td><td align="right">+0.449</td><td align="right">43.378</td></tr>
+<tr class="rowlow"><td>3</td><td>103</td><td>Blake Foster</td><td>2021 Mazda MX-5</td><td align="right">54.006</td><td align="right">+1.165</td><td align="right">43.961</td></tr>
+<tr class="rowhigh"><td>4</td><td>8</td><td>Sam Rivera</td><td>2020 Toyota GR86</td><td align="right">55.119+1</td><td align="right">+2.278</td><td align="right">44.867</td></tr>
+</tbody></table>
+
+<!-- DS -->
+<a name="ds"></a>
+<table class="live" cellpadding="3" cellspacing="0" align="center"><tbody>
+<tr class="rowlow"><th colspan="7" align="center">DS — Street (PAX 0.811)</th></tr>
+<tr class="rowlow">
+  <th>Pos</th><th>#</th><th>Driver</th><th>Car</th>
+  <th>Best</th><th>Diff</th><th>PAX</th>
+</tr>
+<tr class="rowlow"><td>1</td><td>12</td><td>Jordan Park</td><td>2023 VW Golf GTI</td><td align="right"><span class="bestt">53.241</span></td><td align="right">—</td><td align="right">43.178</td></tr>
+<tr class="rowhigh"><td>2</td><td>55</td><td>Cameron Lowe</td><td>2021 Honda Accord</td><td align="right">54.811</td><td align="right">+1.570</td><td align="right">44.451</td></tr>
+<tr class="rowlow"><td>3</td><td>77</td><td>Avery Kim</td><td>2022 Hyundai Elantra N</td><td align="right">55.340</td><td align="right">+2.099</td><td align="right">44.881</td></tr>
+</tbody></table>
+
+<!-- HS -->
+<a name="hs"></a>
+<table class="live" cellpadding="3" cellspacing="0" align="center"><tbody>
+<tr class="rowlow"><th colspan="7" align="center">HS — Street (PAX 0.780)</th></tr>
+<tr class="rowlow">
+  <th>Pos</th><th>#</th><th>Driver</th><th>Car</th>
+  <th>Best</th><th>Diff</th><th>PAX</th>
+</tr>
+<tr class="rowlow"><td>1</td><td>31</td><td>Taylor Voss</td><td>2022 Toyota Corolla</td><td align="right"><span class="bestt">55.620</span></td><td align="right">—</td><td align="right">43.384</td></tr>
+<tr class="rowhigh"><td>2</td><td>14</td><td>Drew McNeil</td><td>2023 Hyundai Venue</td><td align="right">57.003</td><td align="right">+1.383</td><td align="right">44.462</td></tr>
+<tr class="rowlow"><td>3</td><td>62</td><td>Alex Gould</td><td>2020 Honda Fit</td><td align="right">57.881</td><td align="right">+2.261</td><td align="right">45.147</td></tr>
+<tr class="rowhigh"><td>4</td><td>90</td><td>Pat Simmons</td><td>2021 Nissan Versa</td><td align="right">58.750+1</td><td align="right">+3.130</td><td align="right">45.825</td></tr>
+</tbody></table>
+
+<!-- SS -->
+<a name="ss"></a>
+<table class="live" cellpadding="3" cellspacing="0" align="center"><tbody>
+<tr class="rowlow"><th colspan="7" align="center">SS — Street (PAX 0.840)</th></tr>
+<tr class="rowlow">
+  <th>Pos</th><th>#</th><th>Driver</th><th>Car</th>
+  <th>Best</th><th>Diff</th><th>PAX</th>
+</tr>
+<tr class="rowlow"><td>1</td><td>99</td><td>Dana Prescott</td><td>2022 Porsche 911 C2S</td><td align="right"><span class="bestt">50.114</span></td><td align="right">—</td><td align="right">42.096</td></tr>
+<tr class="rowhigh"><td>2</td><td>43</td><td>Jesse Tran</td><td>2021 Corvette C8</td><td align="right">50.882</td><td align="right">+0.768</td><td align="right">42.741</td></tr>
+<tr class="rowlow"><td>3</td><td>11</td><td>Lee Barrows</td><td>2023 BMW M2</td><td align="right">51.540</td><td align="right">+1.426</td><td align="right">43.294</td></tr>
+</tbody></table>
+
+<!-- STR -->
+<a name="str"></a>
+<table class="live" cellpadding="3" cellspacing="0" align="center"><tbody>
+<tr class="rowlow"><th colspan="7" align="center">STR — Street Touring (PAX 0.836)</th></tr>
+<tr class="rowlow">
+  <th>Pos</th><th>#</th><th>Driver</th><th>Car</th>
+  <th>Best</th><th>Diff</th><th>PAX</th>
+</tr>
+<tr class="rowlow"><td>1</td><td>88</td><td>Casey Drummond</td><td>2022 Mazda MX-5 RF</td><td align="right"><span class="bestt">51.334</span></td><td align="right">—</td><td align="right">42.915</td></tr>
+<tr class="rowhigh"><td>2</td><td>3</td><td>Noel Fitzgerald</td><td>2021 Mazda MX-5</td><td align="right">51.990</td><td align="right">+0.656</td><td align="right">43.464</td></tr>
+<tr class="rowlow"><td>3</td><td>44</td><td>Robin Hale</td><td>2019 Subaru BRZ</td><td align="right">52.811</td><td align="right">+1.477</td><td align="right">44.150</td></tr>
+</tbody></table>
+
+<!-- ESP -->
+<a name="esp"></a>
+<table class="live" cellpadding="3" cellspacing="0" align="center"><tbody>
+<tr class="rowlow"><th colspan="7" align="center">ESP — Street Prepared (PAX 0.842)</th></tr>
+<tr class="rowlow">
+  <th>Pos</th><th>#</th><th>Driver</th><th>Car</th>
+  <th>Best</th><th>Diff</th><th>PAX</th>
+</tr>
+<tr class="rowlow"><td>1</td><td>7</td><td>Riley Holt</td><td>2020 Ford Mustang GT350</td><td align="right"><span class="bestt">49.882</span></td><td align="right">—</td><td align="right">42.001</td></tr>
+<tr class="rowhigh"><td>2</td><td>19</td><td>Skyler Odom</td><td>2019 Chevrolet Camaro SS</td><td align="right">50.614</td><td align="right">+0.732</td><td align="right">42.617</td></tr>
+<tr class="rowlow"><td>3</td><td>51</td><td>Chris Nakamura</td><td>2022 Subaru WRX</td><td align="right">51.200</td><td align="right">+1.318</td><td align="right">43.110</td></tr>
+</tbody></table>
+
+<p style="text-align:center;color:#999;font-size:11px;margin:12px 0;">
+  &mdash; End of Results &mdash;
+</p>
+
+<!-- PAX calculator banner iframe -->
+<div id="pax-banner">
+  <iframe src="index.html" scrolling="no" title="PAX Calculator"></iframe>
+  <div id="pax-popout">
+    <button onclick="window.open('index.html','paxcalc','width=460,height=500,resizable=yes')" title="Open in popup">&#x2197;</button>
+  </div>
+</div>
+
+</body>
+</html>
