@@ -27,7 +27,8 @@ Switching to a portrait enlarges the buttons and also exposes historical PAX fig
 customization.
 
 <img width="896" height="1020" alt="Screenshot From 2026-05-26 05-45-13" src="https://github.com/user-attachments/assets/609ea542-89f0-4d8e-a44d-507e1430b4d7" />
-<img width="739" height="1290" alt="Screenshot From 2026-05-26 05-42-13" src="https://github.com/user-attachments/assets/41e2a0e7-1eda-48f4-aa0c-6175082be279" />
+<img width="1016" height="1015" alt="Screenshot From 2026-05-26 09-48-33" src="https://github.com/user-attachments/assets/855f735d-34e7-4dc9-8da2-e74f785ed879" />
+
 
 While this is somewhat of an advanced tool not aimed at new autocrossers, it does aim to be 
 self explanatory in a way that gives insight into autocross classes and categories. 
